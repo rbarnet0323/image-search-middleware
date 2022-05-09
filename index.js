@@ -11,4 +11,4 @@ app.get('/search/:keyword/:page', (req, res) => {
         res.send(data.data);
     });
 });
-app.listen(8080);
+app.listen(process.env.PORT || 8080);
